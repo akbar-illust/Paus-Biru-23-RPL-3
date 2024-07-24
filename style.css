@@ -1,0 +1,46 @@
+/* For Smartphone-S */
+@media screen and (max-width: 320px) {
+    .card {
+        width: 18rem;
+    }
+    .subtitle {
+        width: 18rem;
+    }
+    .btn {
+        justify-content: center;
+    }
+}
+
+/* For Smartphone-L */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .card {
+        width: 20rem;
+    }
+    .subtitle {
+        width: 20rem;
+    }
+    .btn {
+        justify-content: center;
+    }
+}
+
+/* For Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: 40rem;
+    }
+}
+
+/* For PC */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .card {
+        width: 50rem;
+    }
+}
+
+/* For PC */
+@media screen and (min-width: 1200px) {
+    .card {
+        width: 70rem;
+    }
+}
