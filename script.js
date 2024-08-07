@@ -1,7 +1,8 @@
 const semuaData = [
     {
         informasi: `Paus biru adalah mamalia laut dan paus balin. Dengan panjang maksimum yang dikonfirmasi mencapai 29,9 meter dan berat hingga 199 ton, paus ini merupakan hewan terbesar yang pernah ada.`,
-        link: `https://id.m.wikipedia.org/wiki/Paus_biru`
+        link: `https://id.m.wikipedia.org/wiki/Paus_biru`,
+        animasi: `fade-up`
     },
     {
         informasi: `
@@ -15,7 +16,8 @@ const semuaData = [
         <br><br>
         Paus biru Antartika umumnya lebih besar daripada subspesies paus biru lainnya. Misalnya, di Atlantik Utara dan Pasifik Utara, paus biru dapat tumbuh hingga sekitar 90 kaki dan beratnya lebih dari 100.000 pon, tetapi di Antartika, mereka dapat tumbuh hingga sekitar 110 kaki dan beratnya lebih dari 330.000 pon. Seperti banyak paus balin lainnya, paus biru betina umumnya lebih besar daripada jantan.
         `,
-        link: `https://www-fisheries-noaa-gov.translate.goog/species/blue-whale?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc`
+        link: `https://www-fisheries-noaa-gov.translate.goog/species/blue-whale?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc`,
+        animasi: `fade-up`
     },
     {
         informasi: `
@@ -27,7 +29,8 @@ const semuaData = [
         <br><br>
         Hal yang menjadikan paus biru terancam punah adalah tingkat regenerasi paus biru yang bisa dibilang kecil. Paus biru hanya bereproduksi setiap dua atau tiga tahun sekali.
         `,
-        link: `https://www.kompas.com/cekfakta/read/2024/07/01/090900882/infografik--fakta-menarik-paus-biru-mamalia-terbesar-yang-terancam`
+        link: `https://www.kompas.com/cekfakta/read/2024/07/01/090900882/infografik--fakta-menarik-paus-biru-mamalia-terbesar-yang-terancam`,
+        animasi: `fade-up`
     }
 ]
 
@@ -39,10 +42,11 @@ function dataDisplay() {
         if (data.informasi !== undefined && data.informasi !== null) {
             const tampildata = data.informasi;
             const linkSource = data.link;
+            const animasi = data.animasi;
 
             personalityContent += `
-                <div class="grid justify-center select-none">
-                    <div class="card bg-blue-700 grid justify-center p-5 rounded-2xl">
+                <div class="grid justify-center select-none" data-aos="${animasi}" data-aos-duration="500" data-aos-delay="100" data-aos-offset="320">
+                    <div class="card  bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 grid justify-center p-5 rounded-2xl">
                         <div>
                             <div class="">
                                 ${tampildata}<br>
